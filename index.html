@@ -3,96 +3,440 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pathfinding Guide</title>
+  <title>Pathfinding</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #222;
+      font-family: Arial, sans-serif;
+      margin: 20px;
     }
-    h1 {
-      margin-bottom: 1rem;
-    }
-    details {
-      margin-left: 1rem;
-      margin-bottom: 1rem;
-    }
-    summary {
+    details summary {
+      font-weight: bold;
       cursor: pointer;
-      font-weight: 600;
-      font-size: 1.2rem;
-      color: #0055aa;
-      outline: none;
+      margin: 8px 0;
+      font-size: 1.25em;
     }
-    summary:hover {
-      color: #003366;
+    details details summary {
+      font-size: 1.1em;
+      margin-left: 20px;
+    }
+    details details details summary {
+      font-weight: normal;
+      font-size: 1em;
+      margin-left: 40px;
     }
     ul {
-      margin-left: 2rem;
+      margin-left: 60px;
+      padding-left: 0;
       list-style-type: disc;
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .note {
-      font-style: italic;
-      color: #555;
-      margin-bottom: 1rem;
+    iframe {
+      display: block;
+      margin: 8px 0 20px 0;
+      border: none;
     }
   </style>
 </head>
 <body>
- <details>
-  <summary>Middle tree Double roll fell (17t)</summary>
-  <div style="margin-left: 20px;">
+
+<details open>
+  <summary>Pathfinding</summary>
+
+  <!-- Middle tree Double roll fell (17t) -->
+  <details>
+    <summary>Middle tree Double roll fell (17t)</summary>
+
     <details>
       <summary>Right</summary>
-      <div style="margin-left: 20px;">
-        <details>
-          <summary>Left</summary>
-          <ul>
-            <li>Middle</li>
-            <li>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/SZV6C9Rf-BE" 
-                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-            </li>
-          </ul>
-        </details>
 
-        <details>
-          <summary>Left</summary>
-          <ul>
-            <li>Middle</li>
-            <li>Be prepared to MTT from this chop</li>
-            <li>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/vIVgb842ZHM" 
-                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-            </li>
-          </ul>
-        </details>
+      <details>
+        <summary>Left</summary>
+        <ul>
+          <li>Middle</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SZV6C9Rf-BE" allowfullscreen></iframe>
+      </details>
 
-        <details>
-          <summary>Left</summary>
-          <ul>
-            <li>Be prepared to LMT from this chop</li>
-            <li>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/qxtZSsQMC9k" 
-                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-            </li>
-          </ul>
-        </details>
-      </div>
+      <details>
+        <summary>Left</summary>
+        <ul>
+          <li>Middle</li>
+          <li>Be prepared to MTT from this chop</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vIVgb842ZHM" allowfullscreen></iframe>
+      </details>
+
+      <details>
+        <summary>Left</summary>
+        <ul>
+          <li>Be prepared to LMT from this chop</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qxtZSsQMC9k" allowfullscreen></iframe>
+      </details>
+
     </details>
-  </div>
+
+    <details>
+      <summary>Right</summary>
+
+      <details>
+        <summary>Left</summary>
+        <ul>
+          <li>Middle</li>
+          <li>If right tree breaks in 2 chops from here go left tree if 3 chops the solve is the same as m-r4(TSMBRM)</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9R8kfVGGXv8" allowfullscreen></iframe>
+      </details>
+
+      <details>
+        <summary>Left</summary>
+        <ul>
+          <li>Be prepared to LMT from this chop</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/i7Nq58u4NOU" allowfullscreen></iframe>
+      </details>
+
+    </details>
+
+    <details>
+      <summary>Right</summary>
+      <ul>
+        <li>Be prepared to LMT from this chop</li>
+      </ul>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/f7Yby-woF2Q" allowfullscreen></iframe>
+    </details>
+
+    <details>
+      <summary>Right</summary>
+      <ul>
+        <li>Be prepared to IMT from this chop</li>
+      </ul>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/nv3-joxZudk" allowfullscreen></iframe>
+    </details>
+
+    <details>
+      <summary>Right</summary>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vpbLBFwM0hg" allowfullscreen></iframe>
+    </details>
+
+  </details>
+
+  <!-- Middle tree Single roll fell (16t) -->
+  <details>
+    <summary>Middle tree Single roll fell (16t)</summary>
+
+    <details>
+      <summary>Right</summary>
+
+      <details>
+        <summary>Left</summary>
+        <ul>
+          <li>Middle</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qSeFvAjeEeI" allowfullscreen></iframe>
+      </details>
+
+      <details>
+        <summary>Left</summary>
+        <ul>
+          <li>Middle</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QUDrPM_Jzfs" allowfullscreen></iframe>
+      </details>
+
+      <details>
+        <summary>Left</summary>
+        <ul>
+          <li>Be prepared to LMT from this chop</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qxtZSsQMC9k" allowfullscreen></iframe>
+      </details>
+
+    </details>
+
+    <details>
+      <summary>Right</summary>
+
+      <details>
+        <summary>Left</summary>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/B_c3UANu5Vs" allowfullscreen></iframe>
+      </details>
+
+      <details>
+        <summary>Left</summary>
+        <ul>
+          <li>Be prepared to LMT from this chop</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/i7Nq58u4NOU" allowfullscreen></iframe>
+      </details>
+
+    </details>
+
+    <details>
+      <summary>Right</summary>
+      <ul>
+        <li>Be prepared to LMT from this chop</li>
+      </ul>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/f7Yby-woF2Q" allowfullscreen></iframe>
+    </details>
+
+    <details>
+      <summary>Right</summary>
+      <ul>
+        <li>Middle (AKA THE SWEDISH MEATBALL ROLL MANEUVER)</li>
+        <li>Be prepared to IMT from this chop</li>
+      </ul>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/C_P3Z_RJ6IQ" allowfullscreen></iframe>
+    </details>
+
+    <details>
+      <summary>Right</summary>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vpbLBFwM0hg" allowfullscreen></iframe>
+    </details>
+
+  </details>
+
+  <!-- Right tree Double roll fell (17t) -->
+  <details>
+    <summary>Right tree Double roll fell (17t)</summary>
+
+    <details>
+      <summary>Middle</summary>
+
+      <details>
+        <summary>Left</summary>
+
+        <details>
+          <summary>Right</summary>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/PseFjRx3XZk" allowfullscreen></iframe>
+        </details>
+
+        <details>
+          <summary>Right</summary>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YV4KO3V5-N8" allowfullscreen></iframe>
+        </details>
+
+        <details>
+          <summary>Middle (16t middle respawn) / (17t middle respawn)</summary>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/FE-BrL3HQlM" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/AUYxHwkwhTQ" allowfullscreen></iframe>
+        </details>
+
+        <details>
+          <summary>Left</summary>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0IwJObq0obM" allowfullscreen></iframe>
+        </details>
+
+      </details>
+
+      <details>
+        <summary>Middle</summary>
+
+        <details>
+          <summary>Left</summary>
+
+          <details>
+            <summary>Right</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yHFWOEGrGRA" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Right</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2XeehlFEZ7w" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Middle (16t middle respawn) / Right (17t middle respawn)</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aIdb8Ra9d_0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tI5ZMbJ-sH4" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Left</summary>
+            <ul><li>Be prepared to LMT from this chop</li></ul>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/821I1kzXsnk" allowfullscreen></iframe>
+          </details>
+
+        </details>
+
+      </details>
+
+      <details>
+        <summary>Middle</summary>
+
+        <details>
+          <summary>Left</summary>
+
+          <details>
+            <summary>Right</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kFtH-7lTofU" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Right</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jmdU8zrF9iY" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Right</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ARJ4A-Z8bzA" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Middle (16t middle respawn) / (17t middle respawn)</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LZ6Fuzvxp_E" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LMDYZDpfBlw" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Left</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yiiExYf6EyM" allowfullscreen></iframe>
+          </details>
+
+        </details>
+
+      </details>
+
+      <details>
+        <summary>Middle</summary>
+        <ul>
+          <li>Right</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIwkLOfxH2U" allowfullscreen></iframe>
+      </details>
+
+      <details>
+        <summary>Middle</summary>
+        <ul>
+          <li>Right</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JrUBcnvmPy4" allowfullscreen></iframe>
+      </details>
+
+    </details>
+
+  </details>
+
+  <!-- Right tree Single roll fell (16t) -->
+  <details>
+    <summary>Right tree Single roll fell (16t)</summary>
+
+    <details>
+      <summary>Middle</summary>
+
+      <details>
+        <summary>Left</summary>
+
+        <details>
+          <summary>Right</summary>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ADuqB0xVnEo" allowfullscreen></iframe>
+        </details>
+
+        <details>
+          <summary>Right</summary>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YV4KO3V5-N8" allowfullscreen></iframe>
+        </details>
+
+        <details>
+          <summary>Middle (16t middle respawn) / (17t middle respawn)</summary>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/FE-BrL3HQlM" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/AUYxHwkwhTQ" allowfullscreen></iframe>
+        </details>
+
+        <details>
+          <summary>Left</summary>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0IwJObq0obM" allowfullscreen></iframe>
+        </details>
+
+      </details>
+
+      <details>
+        <summary>Middle</summary>
+
+        <details>
+          <summary>Left</summary>
+
+          <details>
+            <summary>Right</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yHFWOEGrGRA" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Right</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2XeehlFEZ7w" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Middle (16t middle respawn) / Right (17t middle respawn)</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aIdb8Ra9d_0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tI5ZMbJ-sH4" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Left</summary>
+            <ul><li>Be prepared to LMT from this chop</li></ul>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/821I1kzXsnk" allowfullscreen></iframe>
+          </details>
+
+        </details>
+
+      </details>
+
+      <details>
+        <summary>Middle</summary>
+
+        <details>
+          <summary>Left</summary>
+
+          <details>
+            <summary>Right</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kFtH-7lTofU" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Right</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jmdU8zrF9iY" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Right</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ARJ4A-Z8bzA" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Middle (16t middle respawn) / (17t middle respawn)</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LZ6Fuzvxp_E" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LMDYZDpfBlw" allowfullscreen></iframe>
+          </details>
+
+          <details>
+            <summary>Left</summary>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yiiExYf6EyM" allowfullscreen></iframe>
+          </details>
+
+        </details>
+
+      </details>
+
+      <details>
+        <summary>Middle</summary>
+        <ul>
+          <li>Right</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIwkLOfxH2U" allowfullscreen></iframe>
+      </details>
+
+      <details>
+        <summary>Middle</summary>
+        <ul>
+          <li>Right</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JrUBcnvmPy4" allowfullscreen></iframe>
+      </details>
+
+    </details>
+
+  </details>
+
 </details>
 
 </body>
