@@ -1,0 +1,77 @@
+/* General body background and font */
+body {
+  background-color: #121212;
+  color: #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem 2rem;
+  line-height: 1.5;
+}
+
+/* Styling for all collapsible details */
+details {
+  margin-left: 1.5rem;
+  margin-top: 0.7rem;
+  color: #ddd;
+  font-weight: 500;
+  user-select: none;
+
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
+}
+
+/* Nested details get slightly lighter background and lighter border */
+details details {
+  margin-left: 1.3rem;
+  font-weight: 400;
+  color: #bbb;
+  border-color: #444;
+  background-color: #2a2a2a;
+}
+
+/* Summary text and arrow styling */
+summary {
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Custom arrow before summary text */
+summary::before {
+  content: "▶";
+  display: inline-block;
+  margin-right: 0.5em;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+  color: #aaa;
+}
+
+/* Rotate arrow when details is open */
+details[open] > summary::before {
+  transform: rotate(90deg);
+  color: #ddd;
+}
+
+/* Responsive video embeds container */
+.video-container {
+  margin: 0.8rem 0 1rem 1.5rem;
+  max-width: 420px;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Style the iframe for videos */
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
