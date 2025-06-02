@@ -60,13 +60,14 @@ details[open] > summary::before {
 
 /* Responsive video embeds container */
 .video-container {
-  margin: 0.8rem 0 1rem 1.5rem;
-  max-width: 420px;
-  aspect-ratio: 4 / 3;
+  margin: 1rem auto;
+  max-width: 640px; /* Was 420px */
+  aspect-ratio: 16 / 9; /* Was 4 / 3 */
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
+
 
 /* Style the iframe for videos */
 .video-container iframe {
