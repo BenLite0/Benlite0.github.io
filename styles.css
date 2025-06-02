@@ -13,7 +13,7 @@ details {
   margin-top: 0.7rem;
   color: #ddd;
   font-weight: 500;
-  user-select: none;
+  user-select: text;
 
   border: 1px solid #555;
   border-radius: 6px;
@@ -102,4 +102,14 @@ summary h2 {
 .discord-icon {
   width: 30px;             /* Small icon width */
   height: 30px;            /* Small icon height */
+}
+
+.code-block {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: Consolas, Monaco, monospace;
+  white-space: pre-wrap;
 }

@@ -202,12 +202,21 @@
    <details>
     <summary>Plugin Information</summary>
     <p>My plugin for the tree timer overlay: <a href="https://runelite.net/plugin-hub/show/1-5-woodcutting" target="_blank">1.5 Woodcutting</a></p>
+    <p><a href="https://runelite.net/plugin-hub/show/camera-points" target="_blank">Camera Points</a>:</br> Camera Point 1: South, Zoom Value: 513 </br> Camera Point 2: North, Zoom Value: 513</p>
     <p><a href="https://runelite.net/plugin-hub/show/hotkeyable-menu-swaps" target="_blank"> Custom Menu Swaps</a>: </br> Custom swaps:</p>
-    <pre><code>Use, * -> teak logs
-Use, * -> Clue *
-   </code></pre> 
+    <pre class="code-block"><code>Use, * -> teak logs
+Use, * -> Clue *</code></pre> 
    <p>Custom Hides:</p>
-   <pre><code>*,Squirrel</p></code></pre>
+   <pre class="code-block"><code>*,Squirrel</p></code></pre>
+   <p><a href="https://runelite.net/plugin-hub/show/watchdog" target="_blank">Watchdog</a>:</p>
+   <p>There's alot of things I do in the clips with watchdogs, some you can see and some you cannot. The only one I really recommend is an audio que that plays when a tree fells. The human brain on average reacts to audio ques slightly faster than visual ques. Here is the import, you just need to add a sound effect or custom sound(also requires game sound to be enabled atleast 2%):</p>
+   <pre class="code-block"><code>{"type":"SoundFiredAlert","soundID":2734,"enabled":true,"name":"tree react Clone","debounceTime":0,"randomNotifications":false,"notifications":[{"type":"SoundEffect","soundID":166,"gain":8,"fireWhenFocused":true,"fireWhenAFK":false,"fireWhenAFKForSeconds":5,"delayMilliseconds":0}]}</code></pre>
+   <p> Also featured in the video is a visual indicator above the player that shows you time left to react to what happend in the previous tick:</p>
+   <pre class="code-block"><code>{"type":"ChatAlert","message":"You swing your axe at the tree.","regexEnabled":false,"gameMessageType":"ANY","enabled":true,"name":"New Game Message Alert","debounceTime":0,"randomNotifications":false,"notifications":[{"type":"Overhead","displayTime":1,"textColor":"#FFFFFFFF","message":"oooooo","fireWhenFocused":true,"fireWhenAFK":false,"fireWhenAFKForSeconds":5,"delayMilliseconds":0},{"type":"Overhead","displayTime":1,"textColor":"#FFFFFFFF","message":"ooooo","fireWhenFocused":true,"fireWhenAFK":false,"fireWhenAFKForSeconds":5,"delayMilliseconds":100},{"type":"Overhead","displayTime":1,"textColor":"#FFFFFFFF","message":"oooo","fireWhenFocused":true,"fireWhenAFK":false,"fireWhenAFKForSeconds":5,"delayMilliseconds":100},{"type":"SoundEffect","soundID":3925,"gain":10,"fireWhenFocused":true,"fireWhenAFK":true,"fireWhenAFKForSeconds":5,"delayMilliseconds":0},{"type":"Overhead","displayTime":1,"textColor":"#FFFFFFFF","message":"ooo","fireWhenFocused":true,"fireWhenAFK":false,"fireWhenAFKForSeconds":5,"delayMilliseconds":100},{"type":"Overhead","displayTime":1,"textColor":"#FFFFFFFF","message":"oo","fireWhenFocused":true,"fireWhenAFK":false,"fireWhenAFKForSeconds":5,"delayMilliseconds":100},{"type":"Overhead","displayTime":1,"textColor":"#FFFFFFFF","message":"o","fireWhenFocused":true,"fireWhenAFK":false,"fireWhenAFKForSeconds":5,"delayMilliseconds":100},{"type":"Overhead","displayTime":1,"textColor":"#FFFFFFFF","message":"","fireWhenFocused":true,"fireWhenAFK":false,"fireWhenAFKForSeconds":5,"delayMilliseconds":100}]}</code></pre>
+   <p>Lastly I use a 3t countdown above my head for when i start my 3t action with Kebbit Claw and vambraces.  Note if you try to use this with other 3t actions like fletching or herb tar it will not work properly:</p>
+   <pre class="code-block"><code>{"type":"SoundFiredAlert","soundID":2605,"enabled":true,"name":"3t count","debounceTime":0,"randomNotifications":false,"notifications":[{"type":"Overhead","displayTime":1,"textColor":"#FFFF0000","message":"ooo","fireWhenFocused":true,"fireWhenAFK":false,"fireWhenAFKForSeconds":5,"delayMilliseconds":0},{"type":"Overhead","displayTime":1,"textColor":"#FFFAFF00","message":"oo","fireWhenFocused":true,"fireWhenAFK":false,"fireWhenAFKForSeconds":5,"delayMilliseconds":600},{"type":"Overhead","displayTime":1,"textColor":"#FF60FF00","message":"o","fireWhenFocused":true,"fireWhenAFK":false,"fireWhenAFKForSeconds":5,"delayMilliseconds":600},{"type":"Overhead","displayTime":1,"message":"","fireWhenFocused":true,"fireWhenAFK":false,"fireWhenAFKForSeconds":5,"delayMilliseconds":580}]}</code></pre>
+   <p>This one tells you to fill your axe when it runs out:</p>
+   <pre class="code-block"><code>{"type":"ChatAlert","message":"You have no charges remaining in your crystal felling axe. You can recharge it with crystal shards.","regexEnabled":false,"gameMessageType":"ANY","enabled":true,"name":"axe","debounceTime":0,"randomNotifications":false,"notifications":[{"type":"Overlay","color":"#7AE2A0A0","textColor":"#FFFFFFFF","sticky":false,"timeToLive":10,"imagePath":"","message":"FILL AXE","fireWhenFocused":true,"fireWhenAFK":false,"fireWhenAFKForSeconds":5,"delayMilliseconds":0}]}</code></pre>
   </details>
   </details>
   <details>
