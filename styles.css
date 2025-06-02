@@ -85,3 +85,21 @@ summary h2 {
   .centered-heading {
   text-align: center;
 }
+
+.footer {
+  margin-top: 1rem;        /* Some space above */
+  padding: 1rem 0;         /* Vertical padding */
+  font-size: 0.9rem;       /* Slightly smaller text */
+}
+
+.discord-line {
+  display: flex;           /* Put icon and text in a row */
+  align-items: center;     /* Vertically center the icon and text */
+  gap: 0.5rem;             /* Space between icon and text */
+  margin-top: 0.5rem;      /* Small space above this line */
+}
+
+.discord-icon {
+  width: 30px;             /* Small icon width */
+  height: 30px;            /* Small icon height */
+}
