@@ -75,3 +75,12 @@ details[open] > summary::before {
   border: none;
   display: block;
 }
+
+summary h2 {
+    display: inline;
+    margin: 0; /* Remove default margin */
+  }
+
+  .centered-heading {
+  text-align: center;
+}
