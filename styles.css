@@ -113,3 +113,25 @@ summary h2 {
   font-family: Consolas, Monaco, monospace;
   white-space: pre-wrap;
 }
+.code-container {
+  position: relative;
+  margin: 1.5em 0;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85em;
+  z-index: 2;
+}
+
+.copy-btn:hover {
+  background-color: #555;
+}
